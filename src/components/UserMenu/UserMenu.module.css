@@ -1,0 +1,50 @@
+.userMenuEl {
+  padding: 7px 12px;
+  border: 1px solid #777;
+  border-radius: 7px;
+  color: rgb(154, 143, 143);
+}
+.box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 5px;
+  gap: 5px;
+}
+/* .box div p {
+  margin: 0;
+  padding: 0;
+  padding: 7px 12px;
+} */
+.box button {
+  padding: 7px 12px;
+  border: 1px solid #777;
+  border-radius: 7px;
+  color: rgb(154, 143, 143);
+  background-color: transparent;
+}
+.valueUser {
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  font-size: clamp(14px, 2vw, 18px);
+  word-break: break-word;
+  max-width: 100%;
+}
+.valueUser:not(:nth-child(1)) {
+  border: 5px solid transparent;
+  border-image: linear-gradient(90deg, transparent, #ffe0a6, transparent) 1;
+  border-width: 0px 0px 1px 0px;
+}
+/* .box p {
+  margin: 0;
+  padding: 0;
+} */
+.iconUser {
+  font-size: 35px;
+  color: #9d9c99;
+}
+.logOut:hover {
+  color: antiquewhite;
+}
