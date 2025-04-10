@@ -2,10 +2,6 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 axios.defaults.baseURL = `https://connections-api.goit.global`;
 
-// axios.defaults.baseURL = `https://connections-api.goit.global/`;
-// const API key = "f39aba3f-80d1-4221-a485-66f5fe7503fa";
-// axios.defaults.headers.common.Authorization = `Bearer ${token}`;
-
 export const fetchContacts = createAsyncThunk(
   "contacts/fetchAll",
   async (_, thunkAPI) => {

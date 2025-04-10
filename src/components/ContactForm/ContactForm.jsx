@@ -5,8 +5,7 @@ import { nanoid } from "nanoid";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import css from "./ContactForm.module.css";
 import { useDispatch, useSelector } from "react-redux";
-import { addContact } from "../../redux/contacts/contactsOps";
-// import { addContact } from "../../redux/contactsSlice";
+import { addContact } from "../../redux/contacts/operations";
 
 export default function ContactForm() {
   const idName = useId();

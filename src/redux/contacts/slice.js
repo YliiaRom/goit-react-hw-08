@@ -1,7 +1,8 @@
 import { createAction, createSelector } from "@reduxjs/toolkit";
 import { createSlice } from "@reduxjs/toolkit";
 
-import { fetchContacts, addContact, deleteContact } from "./contactsOps";
+import { fetchContacts, addContact, deleteContact } from "./operations";
+import { logOut } from "../auth/operations";
 // import { selectNameFilter } from "../filters/selectors";
 //  selectNameFilter
 
@@ -49,7 +50,8 @@ const slice = createSlice({
         state.error = null;
         state.items = state.items.filter((item) => item.id !== action.payload);
       })
-      .addCase(deleteContact.rejected, handleReject);
+      .addCase(deleteContact.rejected, handleReject)
+      .addCase(logOut.fulfilled, (state) => (state.items = []));
   },
 });
 
