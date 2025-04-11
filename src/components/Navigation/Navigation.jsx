@@ -9,7 +9,6 @@ const linkColor = ({ isActive }) => {
 };
 
 export default function Navigation() {
-  // const isLoggedIn = useSelector(selectIsLoggedIn);
   const isLoggedIn = useSelector(selectIsLoggedIn);
 
   return (

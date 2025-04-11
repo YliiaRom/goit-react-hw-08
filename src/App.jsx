@@ -10,11 +10,11 @@ import ContactList from "./components/ContactList/ContactList.jsx";
 
 import users from "./contacts.json";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  addContact,
-  deleteContact,
-  fetchContacts,
-} from "./redux/contacts/operations.js";
+// import {
+//   addContact,
+//   deleteContact,
+//   fetchContacts,
+// } from "./redux/contacts/operations.js";
 import Loader from "./components/Loader/Loader.jsx";
 import {
   selectContacts,
@@ -40,6 +40,7 @@ function App() {
   const error = useSelector(selectError);
 
   const contacts = useSelector(selectContacts);
+
   const isRefreshing = useSelector(selectIsRefreshing);
   useEffect(() => {
     dispatch(refreshUser());

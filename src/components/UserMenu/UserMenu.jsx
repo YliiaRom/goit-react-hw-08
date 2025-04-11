@@ -3,7 +3,7 @@ import { selectUser } from "../../redux/auth/selectors";
 import { BiSolidUser } from "react-icons/bi";
 import css from "./UserMenu.module.css";
 import { logOut } from "../../redux/auth/operations";
-logOut;
+
 export default function UserMenu() {
   const dispatch = useDispatch();
   const dataUser = useSelector(selectUser);
