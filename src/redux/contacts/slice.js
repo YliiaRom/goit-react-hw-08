@@ -51,7 +51,9 @@ const slice = createSlice({
         state.items = state.items.filter((item) => item.id !== action.payload);
       })
       .addCase(deleteContact.rejected, handleReject)
-      .addCase(logOut.fulfilled, (state) => (state.items = []));
+      .addCase(logOut.fulfilled, (state) => {
+        state.items = [];
+      });
   },
 });
 

@@ -6,6 +6,7 @@ import css from "./RegistrationForm.module.css";
 export default function RegistrationForm() {
   const dispatch = useDispatch();
   const handleSubmit = (values, action) => {
+    // dispatch(register(values));
     dispatch(register(values));
     action.resetForm();
   };

@@ -1,0 +1,34 @@
+.box {
+  color: #939090;
+  max-width: 400px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.box p {
+  color: #858383;
+  padding: 0;
+  margin: 0;
+}
+.box a {
+  /* font-weight: 500; */
+  color: #3d3737;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  /* text-decoration: underline; */
+  /* border: 1px solid #6c6969; */
+  padding: 5px 20px;
+  border-radius: 3px;
+
+  margin-bottom: 20px;
+  background: linear-gradient(
+    50deg,
+    transparent,
+    #f7daa5 3%,
+
+    #f7daa5 57%,
+    transparent 88%,
+    transparent 90%,
+    transparent
+  );
+}

@@ -28,22 +28,6 @@ export default function Navigation() {
                 </NavLink>
               </li>
             )}
-            {/* <li>
-              <NavLink to="/contacts" className={linkColor}>
-                Contacts
-              </NavLink>
-            </li> */}
-
-            <li>
-              <NavLink to="/register" className={linkColor}>
-                Register
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/login" className={linkColor}>
-                Log in
-              </NavLink>
-            </li>
           </ul>
         </nav>
       </header>

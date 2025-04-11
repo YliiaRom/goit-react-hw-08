@@ -43,9 +43,10 @@ ul {
     align-items: center;
   }
   .navigationEl {
-    display: block;
-    min-width: 70px;
+    /* display: block; */
+    /* min-width: 40px; */
     width: 100%;
+    border-radius: 999px;
     max-width: 300px;
   }
 }
