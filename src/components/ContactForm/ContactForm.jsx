@@ -38,17 +38,7 @@ export default function ContactForm() {
 
     resetForm();
   };
-  // const handleSubmitFormik = (values, { resetForm }) => {
-  //   dispatch(
-  //     addContact({
-  //       id: crypto.randomUUID(),
-  //       name: values.name.trim() || "",
-  //       number: values.number.trim() || "111111",
-  //     })
-  //   );
 
-  //   resetForm();
-  // };
   return (
     <>
       <h2>Форма додавання контактів</h2>
