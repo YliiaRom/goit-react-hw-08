@@ -1,5 +1,5 @@
 import { useState, useEffect, lazy, Suspense } from "react";
-
+import toast, { Toaster } from "react-hot-toast";
 import AppBar from "./components/AppBar/AppBar.jsx";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
@@ -19,17 +19,17 @@ import {
   selectError,
 } from "./redux/contacts/selectors.js";
 const HomePage = lazy(() => import("./pages/HomePage/HomePage.jsx"));
-// import HomePage from "./components/pages/HomePage/HomePage.jsx";
+
 const RegistrationPage = lazy(() =>
   import("./pages/RegistrationPage/RegistrationPage.jsx")
 );
-// import RegistrationPage from "./components/pages/RegistrationPage/RegistrationPage.jsx";
+
 import LoginForm from "./components/LoginForm/LoginForm.jsx";
 
 const ContactsPage = lazy(() =>
   import("./pages/ContactsPage/ContactsPage.jsx")
 );
-// import ContactsPage from "./components/pages/ContactsPage/ContactsPage.jsx";
+
 import {
   selectIsLoggedIn,
   selectIsRefreshing,
@@ -104,6 +104,18 @@ function App() {
                 <Route path="*" element={<HomePage />} />
               </Route>
             </Routes>
+            <Toaster
+              toastOptions={{
+                style: {
+                  padding: "5px 19px",
+                  color: "#713200",
+                  backgroundColor: "#61615f",
+                  background:
+                    "linear-gradient(120deg, #321e01 0%, #7d7664 10%, #f7f7f2 50%, #fafafa 60%, #cccccb 70%, #474644 85%, #2b0802 90%, transparent 100%)",
+                  borderRadius: "50px 0px 90px 50px",
+                },
+              }}
+            />
           </Suspense>
         </div>
       )}

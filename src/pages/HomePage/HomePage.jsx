@@ -38,6 +38,17 @@ export default function HomePage() {
       <a href="https://formik.org/" target="_blank" rel="noreferrer noopener">
         документація
       </a>
+      <p>
+        При (не)успішних операціях регістрації відображається повідомлення за
+        допомогою React Hot Toast.
+      </p>
+      <a
+        href="https://react-hot-toast.com/"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        документація
+      </a>
     </div>
   );
 }

@@ -26,9 +26,24 @@
     transparent,
     #f7daa5 3%,
 
-    #f7daa5 57%,
+    #f7daa5 70%,
     transparent 88%,
     transparent 90%,
     transparent
   );
+  /* background-color: #61615f;
+  background: linear-gradient(
+    120deg,
+    #321e01 0%,
+
+    #7d7664 10%,
+    #f7f7f2 50%,
+    #fafafa 60%,
+    #cccccb 70%,
+    #474644 85%,
+    #2b0802 90%,
+    transparent 100%
+  );
+
+  border-radius: 50px 0px 90px 50px; */
 }
