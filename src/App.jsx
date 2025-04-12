@@ -114,6 +114,18 @@ function App() {
                     "linear-gradient(120deg, #321e01 0%, #7d7664 10%, #f7f7f2 50%, #fafafa 60%, #cccccb 70%, #474644 85%, #2b0802 90%, transparent 100%)",
                   borderRadius: "50px 0px 90px 50px",
                 },
+                success: {
+                  iconTheme: {
+                    primary: "#777",
+                    secondary: "wite",
+                  },
+                },
+                error: {
+                  iconTheme: {
+                    primary: "#777",
+                    secondary: "#000",
+                  },
+                },
               }}
             />
           </Suspense>
